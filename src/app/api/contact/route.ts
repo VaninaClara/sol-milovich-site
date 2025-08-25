@@ -40,7 +40,7 @@ ${message}
     });
 
     return NextResponse.json({ ok: true });
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error(err);
     return NextResponse.json({ error: "No se pudo enviar el mensaje." }, { status: 500 });
   }
