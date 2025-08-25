@@ -1,5 +1,5 @@
+// src/components/Footer.tsx
 import Link from "next/link";
-
 const year = new Date().getFullYear();
 
 export default function Footer() {
@@ -35,28 +35,28 @@ export default function Footer() {
           <h4 className="text-sm font-semibold text-neutral-900">Recursos</h4>
           <ul className="mt-3 space-y-2 text-sm">
             <li><Link href="/sesion-ebook" className="text-neutral-600 hover:text-neutral-900">Sesión + Ebook</Link></li>
-            <li><Link href="https://amzn.to/3V1Lueq" target="_blank" className="text-neutral-600 hover:text-neutral-900">Libro: Las Llaves del Coaching</Link></li>
-            <li><Link href="https://hotmart.com/es/marketplace/productos/reto-40-dias-de-accion/U90702573K" target="_blank" className="text-neutral-600 hover:text-neutral-900">Reto 40 Días</Link></li>
-            <li><Link href="https://linktr.ee/solmilovich" target="_blank" className="text-neutral-600 hover:text-neutral-900">Linktree</Link></li>
+            <li><a href="https://amzn.to/3V1Lueq" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-neutral-900">Libro: Las Llaves del Coaching</a></li>
+            <li><a href="https://hotmart.com/es/marketplace/productos/reto-40-dias-de-accion/U90702573K" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-neutral-900">Reto 40 Días</a></li>
+            <li><a href="https://linktr.ee/solmilovich" target="_blank" rel="noopener noreferrer" className="text-neutral-600 hover:text-neutral-900">Linktree</a></li>
           </ul>
         </div>
 
         {/* Contacto */}
         <div>
           <h4 className="text-sm font-semibold text-neutral-900">Contacto</h4>
-          <ul className="mt-3 space-y-2 text-sm text-neutral-600">
-            <li>Fort Lauderdale, Florida, EE.UU.</li>
-            <li><a className="hover:text-neutral-900" href="tel:+19545130107">+1 (954) 513-0107</a></li>
-            <li><a className="hover:text-neutral-900" href="mailto:formacionsolmilovich@gmail.com">formacionsolmilovich@gmail.com</a></li>
-          </ul>
+          <address className="not-italic mt-3 space-y-2 text-sm text-neutral-600">
+            <p>Fort Lauderdale, Florida, EE.UU.</p>
+            <a className="hover:text-neutral-900" href="tel:+19545130107">+1 (954) 513-0107</a><br />
+            <a className="hover:text-neutral-900" href="mailto:formacionsolmilovich@gmail.com">formacionsolmilovich@gmail.com</a>
+          </address>
 
           {/* Redes */}
-          <div className="mt-4 flex items-center gap-3">
-            <Link href="https://www.instagram.com/solmilovich" target="_blank" aria-label="Instagram" className="text-neutral-500 hover:text-neutral-900">IG</Link>
-            <Link href="https://www.facebook.com/solmilovichcoach" target="_blank" aria-label="Facebook" className="text-neutral-500 hover:text-neutral-900">FB</Link>
-            <Link href="https://twitter.com/solmilovich" target="_blank" aria-label="X/Twitter" className="text-neutral-500 hover:text-neutral-900">X</Link>
-            <Link href="https://www.youtube.com/channel/UCoc_dG9fRnQcILSsTThd9MA" target="_blank" aria-label="YouTube" className="text-neutral-500 hover:text-neutral-900">YT</Link>
-            <Link href="https://open.spotify.com/show/6DuiPTx53HjbqnqT4CU7Lp" target="_blank" aria-label="Spotify" className="text-neutral-500 hover:text-neutral-900">SP</Link>
+          <div className="mt-4 flex items-center gap-3 text-sm">
+            <a href="https://www.instagram.com/solmilovich" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Sol Milovich" className="text-neutral-500 hover:text-neutral-900">Instagram</a>
+            <a href="https://www.facebook.com/solmilovichcoach" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Sol Milovich" className="text-neutral-500 hover:text-neutral-900">Facebook</a>
+            <a href="https://twitter.com/solmilovich" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) de Sol Milovich" className="text-neutral-500 hover:text-neutral-900">X</a>
+            <a href="https://www.youtube.com/channel/UCoc_dG9fRnQcILSsTThd9MA" target="_blank" rel="noopener noreferrer" aria-label="YouTube de Sol Milovich" className="text-neutral-500 hover:text-neutral-900">YouTube</a>
+            <a href="https://open.spotify.com/show/6DuiPTx53HjbqnqT4CU7Lp" target="_blank" rel="noopener noreferrer" aria-label="Spotify de Sol Milovich" className="text-neutral-500 hover:text-neutral-900">Spotify</a>
           </div>
         </div>
       </div>

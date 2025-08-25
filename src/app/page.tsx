@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-neutral-50">
+    <main className="pt-16 min-h-screen bg-gradient-to-b from-white to-neutral-50">
       {/* HERO */}
       <section className="relative">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-14 sm:py-20 grid md:grid-cols-2 gap-10 items-center">

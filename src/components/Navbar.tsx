@@ -21,7 +21,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-neutral-200">
+    <header className="sticky top-0 z-50 bg-white border-b border-neutral-200 shadow-sm">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo / Marca */}
         <div className="flex items-center gap-2">
