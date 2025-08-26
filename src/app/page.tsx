@@ -49,7 +49,7 @@ export default function Home() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-lg ring-1 ring-black/5">
               <Image
-                src="/sol-hero.png"
+                src="/sol-hero.jpg"
                 alt="Sol Milovich, Coach Ontológica"
                 fill
                 className="object-cover"

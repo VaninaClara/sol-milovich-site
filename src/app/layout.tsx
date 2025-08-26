@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
+import AnalyticsLoader from "@/components/AnalyticsLoader";
 
 const SITE = "https://sol-milovich-site.vercel.app";
 const OG = `${SITE}/og.jpg`;
@@ -38,6 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         {children}
         <Footer />
+        {/* Banner RGPD y Analytics condicional */}
+        <CookieConsent />
+        <AnalyticsLoader />
       </body>
     </html>
   );

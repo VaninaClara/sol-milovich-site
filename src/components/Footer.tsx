@@ -1,5 +1,6 @@
 // src/components/Footer.tsx
 import Link from "next/link";
+import CookieSettingsLink from "@/components/CookieSettingsLink";
 const year = new Date().getFullYear();
 
 export default function Footer() {
@@ -23,7 +24,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-2 text-sm">
             <li><Link href="/carrera" className="text-neutral-600 hover:text-neutral-900">Carrera de Coaching</Link></li>
             <li><Link href="/programas" className="text-neutral-600 hover:text-neutral-900">Programas & Cursos</Link></li>
-            <li><Link href="/coaching" className="text-neutral-600 hover:text-neutral-900">Coaching 1:1</Link></li>
+            <li><Link href="/coaching-1a1" className="text-neutral-600 hover:text-neutral-900">Coaching 1:1</Link></li>
             <li><Link href="/blog" className="text-neutral-600 hover:text-neutral-900">Blog</Link></li>
             <li><Link href="/sobre-sol" className="text-neutral-600 hover:text-neutral-900">Sobre Sol</Link></li>
             <li><Link href="/contacto" className="text-neutral-600 hover:text-neutral-900">Contacto</Link></li>
@@ -71,6 +72,7 @@ export default function Footer() {
             <Link href="/terminos" className="hover:text-neutral-800">Términos</Link>
             <Link href="/privacidad" className="hover:text-neutral-800">Privacidad</Link>
             <Link href="/cookies" className="hover:text-neutral-800">Cookies</Link>
+            <CookieSettingsLink className="hover:text-neutral-800 cursor-pointer inline-block" />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const navItems = [
   { href: "/", label: "Inicio" },
   { href: "/carrera", label: "Carrera" },
   { href: "/programas", label: "Programas" },
-  { href: "/coaching", label: "Coaching 1:1" },
+  { href: "/coaching-1a1", label: "Coaching 1:1" },
   { href: "/blog", label: "Blog" },
   { href: "/sobre-sol", label: "Sobre Sol" },
   { href: "/contacto", label: "Contacto" },
